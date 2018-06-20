@@ -1,3 +1,3 @@
-# web
+# Monkey Game
 
-A repository with my web experiments
+A simple game made with HTML5 and Javascript for use in web programming classes
