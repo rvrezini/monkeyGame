@@ -1,4 +1,4 @@
-//Variaveis de parametros
+//Parameters
 var gameWidth = 540;
 var gameHeight = 504;
 var gameSpeed = 256;
@@ -22,7 +22,7 @@ var canvas =  document.createElement("canvas");
 var ctx =  canvas.getContext("2d");
 var itemsCaught = 0;
 
-//Cria o canvas e adiciona ele na tela
+//Create the canvas
 canvas.width = gameWidth;
 canvas.height = gameHeight;
 document.body.appendChild(canvas);
@@ -91,7 +91,7 @@ var item = {
 };
 
 
-//Eventos
+//Events
 addEventListener("keydown", function (e) {
 	keysDown[e.keyCode] = true;
 }, false);
@@ -310,7 +310,7 @@ function clear()
 
 function drawItem()
 {
-	// Coloca o item em um local randômico do mapa
+	// random banana
 	item.x = tileSize + (Math.random() * (canvas.width - (tileSize * 2)));
 	item.y = tileSize + (Math.random() * (canvas.height - (tileSize * 2)));
 
